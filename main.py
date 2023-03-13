@@ -1,9 +1,10 @@
 n_days = int(input())
+s = 16_637_000_000
 n_hour = n_days * 60
 n_second = n_days * 60 * 60
 v_hour = 38241                            # Miles per hour.
 v_second = v_hour / 3600                  # Miles per second.
-length = v_second*n_second                # In miles.
+length = s - v_second * n_second          # In miles.
 
 rd_wv_spd_second = 299_792_458            # In meters per second.
 rd_wv_spd_hour = rd_wv_spd_second * 3600  # In meters per hour
